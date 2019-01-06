@@ -1,0 +1,91 @@
+<Project>
+  <Name>hu.kuncystem</Name>
+  <ProjectItem type="NClass.DiagramEditor.ClassDiagram.Diagram" assembly="NClass.DiagramEditor, Version=2.4.1823.0, Culture=neutral, PublicKeyToken=null">
+    <Name>pojo.database</Name>
+    <Language>Java</Language>
+    <Entities>
+      <Entity type="Class">
+        <Name>Table</Name>
+        <Access>Public</Access>
+        <Location left="331" top="10" />
+        <Size width="162" height="230" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private long id</Member>
+        <Member type="Field">private String name</Member>
+        <Member type="Field">private String schema</Member>
+        <Member type="Field">private int size = 0</Member>
+        <Member type="Field">private int rowNumber = 0</Member>
+        <Member type="Field">private String description = ""</Member>
+        <Member type="Field">private LocalDateTime created</Member>
+        <Member type="Field">private Table modTable = null</Member>
+        <Member type="Constructor">public Table()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Field</Name>
+        <Access>Public</Access>
+        <Location left="46" top="222" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private long id</Member>
+        <Member type="Field">private final long tableId</Member>
+        <Member type="Field">private String name</Member>
+        <Member type="Field">private String type</Member>
+        <Member type="Field">private int size</Member>
+        <Member type="Field">private boolean primaryKey = false</Member>
+        <Member type="Field">private boolean notNull = false</Member>
+        <Member type="Constructor">public Field(long tableId)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Trigger</Name>
+        <Access>Public</Access>
+        <Location left="562" top="222" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private long id</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Procedure</Name>
+        <Access>Public</Access>
+        <Location left="772" top="273" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private long id</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Index</Name>
+        <Access>Public</Access>
+        <Location left="308" top="339" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private long id</Member>
+        <Member type="Field">private final long tableId</Member>
+        <Member type="Field">private String name</Member>
+        <Member type="Field">private boolean unique = false</Member>
+        <Member type="Constructor">public Index(long tableId)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>NewClass</Name>
+        <Access>Public</Access>
+        <Location left="98" top="489" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+    </Entities>
+    <Relationships>
+      <Relationship type="Association" first="1" second="0">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+        <StartMultiplicity>*</StartMultiplicity>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+    </Relationships>
+  </ProjectItem>
+</Project>

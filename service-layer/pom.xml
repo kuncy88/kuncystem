@@ -4,6 +4,7 @@
     <groupId>hu.kuncystem</groupId>
     <artifactId>master</artifactId>
     <version>1.0.0</version>
+    <relativePath>../master/pom.xml</relativePath>
   </parent>
   <artifactId>service-layer</artifactId>
   <version>0.0.1-SNAPSHOT</version>

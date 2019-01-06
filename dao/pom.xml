@@ -1,11 +1,22 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <parent>
-    <groupId>hu.kuncystem</groupId>
-    <artifactId>master</artifactId>
-    <version>1.0.0</version>
-  </parent>
-  <artifactId>dao</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  <name>DAO Objects</name>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>hu.kuncystem</groupId>
+		<artifactId>master</artifactId>
+		<version>1.0.0</version>
+		<relativePath>../master/pom.xml</relativePath>
+	</parent>
+	<artifactId>dao</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>DAO Objects</name>
+
+	<dependencies>
+		<dependency>
+			<groupId>hu.kuncystem</groupId>
+			<artifactId>pojo</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+	</dependencies>
 </project>
